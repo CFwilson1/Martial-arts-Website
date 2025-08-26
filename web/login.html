@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login_style.css">
+    <script src="js/formvalidation.js"></script>
+    <title>login</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Dubo martial arts</h1>
+        </div>
+        <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="Martial-arts.html">Classes</a></li>
+        </ul>
+        </nav>
+    </header>
+     <form action="phpinclude/loginchk.php" method="post"  class="loginfrm" onsubmit="return loginvalid(this)">
+          <h1>Login Form</h1>
+          <div class="frminput">
+              <label for="uname" id="uname">username</label>
+              <input type="text" name="uname">
+          </div>
+          <div class="frminput">
+              <label for="pass1" id="pass1">Password</label>
+              <input type="password" name="pass1">
+          </div>
+          <button type="submit" name = "submit">SUBMIT</button>
+      </form>
+      <p>Not registered <a href="signup.html">sign up here</a></p>
+    </body>
+    
+</html>
